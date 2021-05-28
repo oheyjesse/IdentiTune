@@ -21,17 +21,20 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
     project: './tsconfig.json'
   },
   rules: {
     'linebreak-style': 'off',
+    'comma-dangle': 'off',
     'prettier/prettier': [
       'error',
       {
         endOfLine: 'auto'
       }
-    ]
+    ],
+    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/no-explicit-any': 'error'
   }
 };
