@@ -6,7 +6,11 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 };
 
 const Input = ({ children, ...restProps }: InputProps): React.ReactElement => {
-  return <StyledInput {...restProps}>{children}</StyledInput>;
+  return (
+    <StyledInput {...restProps} spellCheck={false}>
+      {children}
+    </StyledInput>
+  );
 };
 
 export { Input };
