@@ -1,16 +1,24 @@
 module.exports = {
   extends: [
-    'airbnb-typescript',
-    'airbnb/hooks',
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:jest/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'prettier'
   ],
   plugins: ['react', '@typescript-eslint', 'jest'],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
+    node: true
   },
   globals: {
     Atomics: 'readonly',
@@ -35,6 +43,8 @@ module.exports = {
       }
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/no-explicit-any': 'error'
+    '@typescript-eslint/no-explicit-any': 'error',
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off'
   }
 };
