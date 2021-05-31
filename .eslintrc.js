@@ -45,6 +45,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'error',
     '@typescript-eslint/no-explicit-any': 'error',
     'import/prefer-default-export': 'off',
-    'react/jsx-props-no-spreading': 'off'
+    'react/jsx-props-no-spreading': 'off',
+    '@typescript-eslint/no-empty-interface': 'off'
   }
 };

@@ -15,6 +15,7 @@ const StyledInput = styled.input`
   padding: ${({ theme }) => theme.space.sm};
   color: ${({ theme }) => theme.colors.body};
 
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   letter-spacing: ${({ theme }) => theme.space.xxs};
 
