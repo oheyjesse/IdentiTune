@@ -1,1 +1,6 @@
 @import-normalize;
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
